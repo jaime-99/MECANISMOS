@@ -3,7 +3,7 @@
 
 body{
 
-    background-color:lightblue;
+    background-color:blue;
 }
 
 .h3{
@@ -12,7 +12,7 @@ body{
     color:red;
 }
 
-.engranaje {
+.engranajes {
     display:inline-block;
     vertical-align:top;
        
