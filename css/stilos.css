@@ -9,4 +9,11 @@ body{
 .h3{
     
     text-align: center;   
+    color:red;
+}
+
+.engranaje {
+    display:inline-block;
+    vertical-align:top;
+       
 }
