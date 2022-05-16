@@ -3,17 +3,74 @@
 
 body{
 
-    background-color:lightblue;
+    background-color:aquamarine
 }
 
-.h3{
-    
-    text-align: center;   
-    color:red;
+.h3
+{
+text-align: center;
+
 }
 
-.engranaje {
+
+.engranajes{
+
     display:inline-block;
     vertical-align:top;
-       
 }
+
+.rotacion_1{
+
+    text-align: center;
+
+}
+
+.titulo{
+
+    background-color: dimgray;
+    text-align: center;
+    padding:10px;
+    font-size:27px;
+
+}
+
+nav ul {
+    margin: 0px;
+    padding: 5px 0px 5px 30px;
+  }
+
+  nav li {
+    display: inline;
+    margin-right: 100px;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+.fondo{
+background-color:aquamarine
+
+}
+.foto_mecanismos{
+
+  background-color: aliceblue;
+  height: 600px; ;
+  width: 2000px; ;
+}
+.piñon{
+
+height: 600px; ;
+width: 600px;
+}
+
+.instituto{
+    position:relative;
+    bottom:600px;
+    text-align:right;
+
+
+}
+
+
