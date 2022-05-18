@@ -9,6 +9,8 @@
 
 
 
+  
+ 
   <div>
     <div class="titulo">
       <h3> Simulacion de mecanismos</h3>
@@ -23,9 +25,9 @@
     <div class="fondo">
 <nav>
     <ul>
-      <li><a href="#">Home</a></li>
+      <li><a href="#">Casa</a></li>
       <li><a href="#Mecanismos">Ejemplos de Simulacion</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#">Nosotros</a></li>
     </ul>
   </nav>
 
@@ -34,7 +36,7 @@
 
 
 <div class="foto_mecanismos">
-  <img class= "piñon" src="imagenes/piñon2.png" alt="foto de mecanismos " > </img>
+  <img class= "piñon" src="fotos/piñon2.png" alt="foto de mecanismos " > </img>
   </div>
 
 
@@ -42,6 +44,7 @@
 <h3 class="instituto"> INSTITUTO TECNOLOGICO DE SALTILLO  </h3>
 
 </div>
+
 
 
 
@@ -82,9 +85,17 @@
 <h3 class="texth3">Sistema de polea y correa: </h3>
 
 <ul>
-<li>Polea con correa  </li>
-<li>Tren de polea con correa </li>
-<li><a href="https://trinket.io/python3/458985dfc0"> click para calcular la relacion de transmicion de velocidad </a> </li>
+  
+  
+  <li class="enlace"> <a href="#velocidad"> relacion de transmision de velocidad </a> </li>
+  <br>
+
+  <li class="enlace2"> <a href="#eje2">Velocidad del eje conducido  </li> </a>
+  <li class="enlace3"> <a href="#longitud2">Longitud de correa que se necesita  </li> </a>
+  <li class="enlace4"> <a href="#Tren1">Tren de poleas   </li> </a>
+
+
+
 
 
 </ul>  
@@ -97,8 +108,8 @@
   <li>Par de engranaje </li>
   <lo>  <a  href= "https://trinket.io/python3/fdfcca4fb9">click para la Simulacion de Velocidad de rotacion   </a> </lo>
   <li>Tren de engranaje </li>
-  <li>Engranaje con cadena </li>
-  <li>Tornillo sinfin </li>
+  
+  
   
 </ul>  
 </div>
@@ -120,50 +131,203 @@
 
 
     <div class="engranajes"> 
-      <img src="imagenes/engranajes.png" alt="foto de engranaje " >
+      <img src="fotos/engranajes.png" alt="foto de engranaje " >
     </div>
 
 
 
+  <div class="p_programa">
+    <h4 id="velocidad"> relacion de transmision de velocidad: :</h4>
+    <p class="texto1"> se desea transmitir movimiento, con el mismo sentido de giro, entre dos ejes paralelos situados a 60 cm de distancia 
 
-    <h4 id="transmitir_movimiento">Transmitir movimiento:</h4>
-<img src="imagenes/transmitir_movimiento.png" alt="foto de transmitir_movimiento " >
- </body>
+      <br>
+      para ello se emplean dos poleas, una motora, de 15 cm de diametro y que tiene el eje de entrada unido solidariamente a un motor eletrico
+      
+      que gira a 1200 rpm, y una conducida de 45 cm de diametro.
+      <br>
+      <br>
+      Calcula la relacion de transmision de velocidad:
 
-<h4 id="Transmicion_circular"> ¿A que velocidad gira el eje conducido? </h4>
+      <div>
 
-<img src="imagenes/eje_conducido.png" alt="foto de eje_conducido " >
+          <button class="boton1"> <a href="https://trinket.io/python3/458985dfc0"> Calcular la relacion de transmision de velocidad </button> </a>
 
-<h4 id="Transmicion_circular"> ¿Que longitud de correa se necesita?</h4>
+      </div>
 
-<img src="imagenes/ola.jpg" alt="foto de eje_conducido " >
+    </p>
 
-<h4 id="Transicion_circular"> Tren de poleas</h4>
+    </div>
 
-<img src="imagenes/2.jpg" alt="foto de eje_conducido " >
+ 
+<div class="ejercicio2">
+<h4 id="eje2"> ¿A que velocidad gira el eje conducido? </h4>
+<p>
+      Para determinar la velocidad del eje conducido, utilizamos la ecuacion de velocidades:
+      <br>
+      <br>
+      <br>
+
+      """Simulacion del calculo de la velocidad que gira el eje conducido
+ de correa plana en rpm
+ a partir de la ecuacion de las velocidades:
+ (D1) * (N1) = (D2)* (N2)
+ <br>
+ 
+ se despeja N2 de la ecuacion anterior:
+  <br>
+ N2 = (N1)*(D1)/(D2)
+ <br>
+ <br>
+ 
+ D1 diametro polea menor
+ <br>
+ N1 velocidad giro inicial
+ <br>
+ D2 diametro polea mayor
+ <br>
+ N2 velocidad giro conducido
+ <br>
+ 
+ valores sugeridos: 
+ <br>
+ El Diametro D1 de la polea menor es de 150 mm
+ La velocidad de giro inicial N1 de la polea menor es de 1200 rpm
+ El diametro D2 de la polea mayor es de 450 mm
+ Solución velocidad que gira el eje conducido  N2 = es 400 rpm
+
+
+
+
+
+
+</p>
+
+
+<div>
+
+  <button class="boton2"> <a href="https://trinket.io/python3/1bec8d1f36"> Calcular la velocidad del eje conducido  </button> </a>
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="ejercicio3">
+
+
+<h4 id="longitud2"> ¿Que longitud de correa se necesita?</h4>
+
+
+<p>
+
+
+  """Simulacion del calculo de la longitud de la correa que se necesita en mm
+  <br>
+ #a partir de la ecuacion de longitud:
+ <br>
+
+ #L = π*(L1 + L2) + 2*(math.sqrt((L3)**2 + (L1 - L2)**2))
+ <br>
+
+ donde:
+ <br>
+ #L longitud de la correa, 
+ <br>
+ #L1 semicircunferencia de la polea conducida, 
+ <br>
+ #L2 semicircunferencia de la polea conductora, 
+ <br>
+ #L3 distancia entre los ejes de las poleas
+
+
+</p>
+
+
+<div>
+
+  <button class="boton3"> <a href="https://trinket.io/python3/5691c25ef7"> calcular la longitud de correa que se necesita: </button> </a>
+
+</div>
+
+
+</div>
+
+
+<div class="ejercicio4">
+<h4 id="Tren1"> Tren de poleas</h4>
+
+<p>
+  Simulación del cálculo de relación de transmisión del mecanismo de un tren de poleas constituido por tres escalonamientos en mm a partir de la ecuación de relación de transmisión, donde:
+  i relación de transmisión,
+  <br>
+  D1 diámetro polea motora 1,
+  <br>
+  D2 diámetro polea conducida 2,
+  <br>
+  D3 diámetro polea motora 3,
+  <br>
+  D4 diámetro polea conducida 4,
+  <br>
+  D5 diámetro polea motora 5,
+  <br>
+  D6 diámetro polea conducida 6,
+  <br>
+  
+  Valores sugeridos:
+  <br>
+  El diámetro D1 de la polea motora 1 es de 10 mm
+  <br>
+  El diámetro D2 de la polea conducida 2 es de 40 mm
+  <br>
+  El diámetro D3 de la polea motora 3 es de 20 mm
+  <br>
+  El diámetro D4 de la polea conducida 4 es de 50 mm
+  <br>
+  El diámetro D5 de la polea motora 5 es de 30 mm
+  <br>
+  El diámetro D6 de la polea conducida 6 es de 60 mm
+  <br>
+  Solución relación de transmisión del mecanismo i= 0.05 
+
+</p>
+
+
+<button class="boton4"> <a href="https://trinket.io/python3/e36bc39f58"> ejercicio de tren de poleas  </button> </a>
+
+</div>
+
+
+
+
+
+
 
 <h4 id="Transicion_circular"> a) La relacion de transmicion del mecanismo</h4>
 
-<img src="imagenes/3.jpg" alt="foto de eje_conducido " >
+<img src="fotos/3.jpg" alt="foto de eje_conducido " >
 
 <h4 id="Transicion_circular"> b) La velocidad del eje de salida</h4>
 
-<img src="imagenes/4.jpg" alt="foto de eje_conducido " >
+<img src="fotos/4.jpg" alt="foto de eje_conducido " >
 
 <h4 id="Transicion_circular"> c) Calcula la velocidad del ultimo arbol</h4>
 
-<img src="imagenes/arbol.png" alt="foto de arbol " >
+<img src="fotos/arbol.png" alt="foto de arbol " >
 
-<img src="imagenes/6.jpg" alt="foto de eje_conducido " >
+<img src="fotos/6.jpg" alt="foto de eje_conducido " >
 
 <h4 id="Transicion_circular"> d) Calcula la relacion de transmision de velocidad total</h4>
 
-<img src="imagenes/7.jpg" alt="foto de eje_conducido " >
+<img src="fotos/7.jpg" alt="foto de eje_conducido " >
 
 <h4 id="Transicion_circular"> e) Calcula diametro de polea</h4>
 
-<img src="imagenes/8.jpg" alt="foto de eje_conducido " >
-<img src="imagenes/9.jpg" alt="foto de eje_conducido " >
+<img src="fotos/8.jpg" alt="foto de eje_conducido " >
+<img src="fotos/9.jpg" alt="foto de eje_conducido " >
 
 <h4 id="Transicion_circular"> Potencia nominal por correa <br>
   Dependiendo del tipo de correa se debe seleccionar la ecuación adecuada para calcular la potencia. <br>
@@ -171,7 +335,7 @@
   por correas tipo A, se planteará solo la ecuación para esta sección específica. 
   Hay que tener en cuenta que para cada sección se define una ecuación.</h4>
    
-  <img src="imagenes/potencia.png" alt="foto de eje_conducido " >
+  <img src="fotos/potencia.png" alt="foto de eje_conducido " >
   <h4 id="Transicion_circular">
   ec. 1 <br>
   dp=  diámetro primitivo de la polea menor, equivale a D1.<br>
@@ -182,7 +346,7 @@
   Dp/dp
   </h4>
 
-  <img src="imagenes/11.jpg" alt="foto de eje_conducido " >
+  <img src="fotos/11.jpg" alt="foto de eje_conducido " >
 
 
   <h4 id="Transicion_circular">	Calcule la potencia nominal por correa de acuerdo con la ecuación 1, <br> 
@@ -211,7 +375,7 @@
     d=2r </p>
     </h4>
 
-    <img src="imagenes/12.jpg" alt="foto de eje_conducido " >
+    <img src="fotos/12.jpg" alt="foto de eje_conducido " >
 
     <h4 id="Transicion_circular"> H = L/4-0.3925(D+d) <br>
       B= (D-d)2 /8 <br>
@@ -252,17 +416,17 @@
       </p>
       </h4>
 
-      <img src="imagenes/13.jpg" alt="foto de eje_conducido " >
+      <img src="fotos/13.jpg" alt="foto de eje_conducido " >
 
 <h3>Engranajes</h3>
 
 <h4 id="Transicion_circular"> engranajes simple </h4>
 
-<img src="imagenes/14.jpg" alt="foto de eje_conducido " >
+<img src="fotos/14.jpg" alt="foto de eje_conducido " >
 
 <h4 id="Transicion_circular"> Relación de velocidad de rotación con respecto a la cantidad de dientes que tiene un engranaje.</h4>
 
-<img src="imagenes/15.jpg" alt="foto de eje_conducido " >
+<img src="fotos/15.jpg" alt="foto de eje_conducido " >
 
 <h4 id="Transicion_circular"> Nm velocidad de rotación del engranaje conductor rpm<br>
   Ns velocidad de rotación del engranaje conducido rpm<br>
@@ -274,17 +438,17 @@
   
   </h4>
 
-  <img src="imagenes/16.jpg" alt="foto de eje_conducido " >
-  <img src="imagenes/17.jpg" alt="foto de eje_conducido " >
+  <img src="fotos/16.jpg" alt="foto de eje_conducido " >
+  <img src="fotos/17.jpg" alt="foto de eje_conducido " >
 
 <h4 id="Transicion_circular"> Ejemplo 1 Relación de transmisión</h4>
 
-<img src="imagenes/18.jpg" alt="foto de eje_conducido " >
+<img src="fotos/18.jpg" alt="foto de eje_conducido " >
 
 <h4 id="Transicion_circular"> i = i1 *i2 *i3  = z1 z3 z5 / z2 z4 z6
   I = (15*20*10)/(45*40*30)</h4>
 
-  <img src="imagenes/19.jpg" alt="foto de eje_conducido " >
+  <img src="fotos/19.jpg" alt="foto de eje_conducido " >
 
 <h4 id="Transicion_circular"> Cálculo de la velocidad del eje de salida <br>
   i=n_s/n_e <br>
@@ -294,11 +458,11 @@
   Ejemplo 2   Velocidad de giro</p>
   </h4>
 
-  <img src="imagenes/20.jpg" alt="foto de eje_conducido " >
+  <img src="fotos/20.jpg" alt="foto de eje_conducido " >
 
   <h4 id="Transicion_circular"> Ejemplo 3 Numero de dientos </h4>
 
-  <img src="imagenes/21.jpg" alt="foto de eje_conducido " >
+  <img src="fotos/21.jpg" alt="foto de eje_conducido " >
 
   <h4 id="Transicion_circular"> Ejemplo 4 Potencia nominal en transmisión por correa dentada <br>
 
@@ -306,11 +470,11 @@
     y el esquema de accionamiento de la Figura 2, puede ser realizado haciendo uso de las siguientes relaciones.
      </h4>
 
-     <img src="imagenes/22.jpg" alt="foto de eje_conducido " >
+     <img src="fotos/22.jpg" alt="foto de eje_conducido " >
 
-     <img src="imagenes/23.jpg" alt="foto de eje_conducido " >
+     <img src="fotos/23.jpg" alt="foto de eje_conducido " >
 
-     <img src="imagenes/24.jpg" alt="foto de eje_conducido " >
+     <img src="fotos/24.jpg" alt="foto de eje_conducido " >
 
 <h4 id="Matriz">Matriz Denavit–Hartenberg <br>
 
