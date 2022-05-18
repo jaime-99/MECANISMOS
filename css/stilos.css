@@ -69,8 +69,34 @@ width: 600px;
     position:relative;
     bottom:600px;
     text-align:right;
+}
+
+
+
+.p_programa{
+
+  background-color: darkcyan;
+
+}
+
+.boton1{
+background-color: cornflowerblue;
 
 
 }
+
+a:hover{
+
+color: red;  
+  text-decoration: none;
+
+} 
+
+a:link{
+color:brown;
+  text-decoration: none;
+
+}
+
 
 
