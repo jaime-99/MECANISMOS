@@ -87,15 +87,31 @@ background-color: cornflowerblue;
 
 a:hover{
 
-color: red;  
+color: blue;  
   text-decoration: none;
 
 } 
 
 a:link{
-color:brown;
+color:blue;
   text-decoration: none;
 
+}
+
+.ejercicio2{
+
+  background-color: antiquewhite;
+
+}
+
+.ejercicio3{
+
+  background-color: antiquewhite;
+}
+
+.ejercicio4{
+
+  background-color: antiquewhite;
 }
 
 
